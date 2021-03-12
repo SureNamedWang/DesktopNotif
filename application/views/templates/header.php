@@ -14,35 +14,6 @@
         <!-- ICON -->
         <link rel="icon" href="../assets/img/nhicon.ico" type="image/x-icon"/>
         <!-- TITLE -->
-        <title>Vaksin - National Hospital</title>
-        <style>
-            :root{
-                --primary: #033b4a;
-                --secondary: #01d6a3;
-                --title: transparent;
-            }
-
-            .nav-wrapper{
-                background: var(--primary);
-            }
-
-            .brand-logo{
-                background: var(--title);
-                margin-left: 10px;
-            }
-
-            #logoNH{
-                height: 60px;
-            }
-
-            .card-content{
-                background:var(--secondary);
-                color: white;
-            }
-
-            .btn-floating{
-                background:var(--primary);
-            }
-
-        </style>
+        <title>Notif - National Hospital</title>
+        
     </head>
