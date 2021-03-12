@@ -1,26 +1,48 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<title>Report - National Hospital</title>
-	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
-	<link rel="icon" href="../assets/img/nhicon.ico" type="image/x-icon"/>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <!--Let browser know website is optimized for mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-	<!-- Fonts and icons -->
-	<script src="../assets/js/plugin/webfont/webfont.min.js"></script>
-	<script>
-		WebFont.load({
-			google: {"families":["Open+Sans:300,400,600,700"]},
-			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: ['../assets/css/fonts.css']},
-			active: function() {
-				sessionStorage.fonts = true;
-			}
-		});
-	</script>
-	
-	<!-- CSS Files -->
-	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-	<link rel="stylesheet" href="../assets/css/azzara.min.css">
-</head>
-<body>
-    <div class="wrapper">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../assets/css/materialize.min.css"  media="screen,projection"/>
+        <!-- ICON -->
+        <link rel="icon" href="../assets/img/nhicon.ico" type="image/x-icon"/>
+        <!-- TITLE -->
+        <title>Vaksin - National Hospital</title>
+        <style>
+            :root{
+                --primary: #033b4a;
+                --secondary: #01d6a3;
+                --title: transparent;
+            }
+
+            .nav-wrapper{
+                background: var(--primary);
+            }
+
+            .brand-logo{
+                background: var(--title);
+                margin-left: 10px;
+            }
+
+            #logoNH{
+                height: 60px;
+            }
+
+            .card-content{
+                background:var(--secondary);
+                color: white;
+            }
+
+            .btn-floating{
+                background:var(--primary);
+            }
+
+        </style>
+    </head>

@@ -75,79 +75,10 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '172.17.0.191',
-	
-	'username' => 'sa',
-	'password' => 'Password2012',
-	'database' => 'MS_NH',
-	'dbdriver' => 'sqlsrv',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => TRUE,
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
-
-$db['enigma'] = array(
-	'dsn'	=> '',
-	'hostname' => '172.17.0.170',
-	
-	'username' => 'enigma',
-	'password' => 'enigma',
-	'database' => 'mobile',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => TRUE,
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
-
-$db['downloads'] = array(
-	'dsn'	=> '',
-	'hostname' => '172.17.0.69',
-	
-	'username' => 'admin',
-	'password' => 'Password2975777',
-	'database' => 'report',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => '',
-	'pconnect' => FALSE,
-	'db_debug' => TRUE,
-	'cache_on' => FALSE,
-	'cachedir' => '',
-	'char_set' => 'utf8',
-	'dbcollat' => 'utf8_general_ci',
-	'swap_pre' => '',
-	'encrypt' => FALSE,
-	'compress' => FALSE,
-	'stricton' => FALSE,
-	'failover' => array(),
-	'save_queries' => TRUE
-);
-
-$db['otherdb2'] = array(
-	'dsn'	=> '',
-	'hostname' => '172.17.0.69',
-	'username' => 'admin',
-	'password' => 'Password2975777',
-	'database' => 'notifwa',
+	'hostname' => '172.17.0.67',
+	'username' => 'root',
+	'password' => 'Password@2012',
+	'database' => 'newappointment',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,

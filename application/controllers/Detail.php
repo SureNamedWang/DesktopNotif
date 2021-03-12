@@ -1,5 +1,5 @@
 <?php
-class Home extends CI_Controller 
+class Detail extends CI_Controller 
 {
 	public function __construct()
 	{
@@ -8,10 +8,11 @@ class Home extends CI_Controller
 
 	public function index()
 	{	
-		$data['halaman']='home';
+        $data['halaman']='detail';
+        $data['product']=$_GET['id'];
 		$this->load->view('templates/header',$data);
 		$this->load->view('templates/navbar');
-		$this->load->view('home');
+		$this->load->view('detail');
 		$this->load->view('templates/footer');
 	}
 }
