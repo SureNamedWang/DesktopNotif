@@ -54,6 +54,7 @@
                     const title = "Notifikasi Konsultasi";
                     const options = {
                         "body": "Akan ada Telekonsul untuk "+dokter+" dengan pasien a/n "+pasien,
+                        "icon": "../assets/img/nhicon.ico",
                     };
 
                     reg.showNotification(title,options);
