@@ -75,14 +75,15 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => '172.17.0.67',
-	'username' => 'root',
-	'password' => 'Password@2012',
-	'database' => 'newappointment',
+	'hostname' => '172.17.0.170',
+	
+	'username' => 'enigma',
+	'password' => 'enigma',
+	'database' => 'appointmentdb',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
-	'db_debug' => (ENVIRONMENT !== 'production'),
+	'db_debug' => TRUE,
 	'cache_on' => FALSE,
 	'cachedir' => '',
 	'char_set' => 'utf8',
