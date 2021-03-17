@@ -38,20 +38,20 @@ function updateBtn() {
   pushButton.disabled = false;
 }
 
-function updateSubscriptionOnServer(subscription) {
-  // TODO: Send subscription to application server
+// function updateSubscriptionOnServer(subscription) {
+//   // TODO: Send subscription to application server
 
-  const subscriptionJson = document.querySelector('.js-subscription-json');
-  const subscriptionDetails =
-    document.querySelector('.js-subscription-details');
+//   // const subscriptionJson = document.querySelector('.js-subscription-json');
+//   // const subscriptionDetails =
+//   //   document.querySelector('.js-subscription-details');
 
-  if (subscription) {
-    subscriptionJson.textContent = JSON.stringify(subscription);
-    subscriptionDetails.classList.remove('is-invisible');
-  } else {
-    subscriptionDetails.classList.add('is-invisible');
-  }
-}
+//   // if (subscription) {
+//   //   subscriptionJson.textContent = JSON.stringify(subscription);
+//   //   subscriptionDetails.classList.remove('is-invisible');
+//   // } else {
+//   //   subscriptionDetails.classList.add('is-invisible');
+//   // }
+// }
 
 function subscribeUser() {
   const applicationServerKey = urlB64ToUint8Array(applicationServerPublicKey);
@@ -62,7 +62,7 @@ function subscribeUser() {
   .then(function(subscription) {
     console.log('User is subscribed.');
 
-    updateSubscriptionOnServer(subscription);
+    // updateSubscriptionOnServer(subscription);
 
     isSubscribed = true;
 
@@ -95,14 +95,14 @@ function unsubscribeUser() {
 }
 
 function initializeUI() {
-  pushButton.addEventListener('click', function() {
-    pushButton.disabled = true;
-    if (isSubscribed) {
-      unsubscribeUser();
-    } else {
-      subscribeUser();
-    }
-  });
+//   pushButton.addEventListener('click', function() {
+//     pushButton.disabled = true;
+//     if (isSubscribed) {
+//       unsubscribeUser();
+//     } else {
+//       subscribeUser();
+//     }
+//   });
 
   // Set the initial subscription value
   swRegistration.pushManager.getSubscription()
@@ -134,8 +134,6 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
   .catch(function(error) {
     console.error('Service Worker Error', error);
   });
-
-  window.location.href = "http://172.17.0.69/DesktopNotif/Home/appointments";
 } else {
   console.warn('Push messaging is not supported');
   pushButton.textContent = 'Push Not Supported';

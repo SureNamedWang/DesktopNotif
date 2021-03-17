@@ -9,15 +9,6 @@ class Home extends CI_Controller
 
 	public function index()
 	{	
-		$data['halaman']='registration';
-		$this->load->view('templates/header',$data);
-		$this->load->view('templates/navbar');
-		$this->load->view('registration');
-		$this->load->view('templates/footer');
-	}
-
-	public function appointments()
-	{	
 		$data['halaman']='home';
 		$this->load->view('templates/header',$data);
 		$this->load->view('templates/navbar');
